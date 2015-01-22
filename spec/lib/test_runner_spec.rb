@@ -31,7 +31,7 @@ describe TestRunner do
 
   context 'player rolls a perfect game' do
 
-    let(:rolls) { [10] * 11 }
+    let(:rolls) { [10] * 12 }
     xit { expect(subject).to eq 300 }
   end
 end
