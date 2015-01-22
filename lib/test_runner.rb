@@ -1,7 +1,7 @@
 class TestRunner
 
   def self.run(rolls)
-    'world'
+    # add your code here
   end
 
 end
