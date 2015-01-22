@@ -2,10 +2,8 @@
 
 ## Description
 
-This kata is relatively easy for newcomers to TDD. It’s a good one for creating a test list at the start, and choosing a suitable order to implement them in that allows the algorithm to develop organically.
-As Robert Martin points out in his article, it is possible to analyse the requirements for this problem and come up with an over-designed solution. If you do this Kata with TDD newcomers it could show them how TDD can help you discover a good design for your software without too much up-front work.
-
-Excerpt From: Emily Bache. “The Coding Dojo Handbook.”
+The kata is about creating a program to calculate a ten pin bowler's score.
+I have written test cases to save us some time, the aim being to get a simple test case to pass and incrementally add functionality to get more test cases to pass.
 
 ### Rules of the Game
 
