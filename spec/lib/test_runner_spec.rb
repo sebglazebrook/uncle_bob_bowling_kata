@@ -19,13 +19,13 @@ describe TestRunner do
 
   context 'player rolls a spare and a 5' do
 
-    let(:rolls) { [7,3,5].concat([0] * 17) }
+    let(:rolls) { [7,3,5].concat([0] * 20) }
     it { expect(subject).to eq 20 }
   end
 
   context 'player rolls a strike and a 2 and a 7' do
 
-    let(:rolls) { [10,2,7].concat([0] * 17) }
+    let(:rolls) { [10,2,7].concat([0] * 27) }
     it { expect(subject).to eq 17 }
   end
 
