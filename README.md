@@ -35,3 +35,31 @@ FP skills list stolen from: http://www.sitepoint.com/functional-programming-tech
 * We will not check for valid rolls.
 * We will not check for correct number of rolls and frames.
 * We will not provide scores for intermediate frames.
+
+### Feeling brave
+
+* You can use the hamster gem's library to enforce immutability, it's included in the bundle
+
+    ```
+    require 'hamster'
+
+    # Create and modify a Hamster array
+    first_array = Hamster.vector(1,2,3,4)
+    #=> [1, 2, 3, 4]
+
+    second_array = first_array.add(5)
+    #=> [1, 2, 3, 4, 5]
+
+    first_array.object_id == second_array.object_id
+    #=> false
+
+    # Create and modify a Hamster hash
+    first_hash = Hamster.hash(first_name: 'Seb', last_name: 'Glazebrook')
+    #=> Hamster::Hash[:name => "Seb", :last_name => 'Glazebrook']
+
+    second_hash = first_hash.put(:age => 32)
+    #=> Hamster::Hash[:name => "Seb", :last_name => 'Glazebrook', :age => 32]
+
+    first_hash.object_id == second_hash.object_id
+    #=> false
+    ```
