@@ -63,3 +63,7 @@ FP skills list stolen from: http://www.sitepoint.com/functional-programming-tech
     first_hash.object_id == second_hash.object_id
     #=> false
     ```
+
+### Cool Links
+
+* http://blog.txus.io/kleisli/ - Cheers [Tom](https://github.com/tomjadams)
