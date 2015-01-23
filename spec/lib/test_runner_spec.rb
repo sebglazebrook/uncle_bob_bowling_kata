@@ -25,7 +25,7 @@ describe TestRunner do
 
   context 'player rolls a strike and a 2 and a 7' do
 
-    let(:rolls) { [10,2,7].concat([0] * 27) }
+    let(:rolls) { [10,2,7].concat([0] * 16) }
     xit { expect(subject).to eq 17 }
   end
 
